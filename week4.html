@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX Startup - Week 4 Animated Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="week4.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top space-navbar">
+        <div class="container">
+            <a class="navbar-brand animated-logo" href="#">
+                <i class="fas fa-rocket me-2"></i>SpaceX Startup
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link hover-effect" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-effect" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-effect" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-effect" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-effect" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section id="home" class="hero-section">
+        <div id="spaceCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#spaceCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#spaceCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#spaceCarousel" data-bs-slide-to="2"></button>
+            </div>
+            
+            <div class="carousel-inner">
+                <!-- Slide 1: Astronaut -->
+                <div class="carousel-item active">
+                    <div class="carousel-background bg-astronaut">
+                        <div class="floating-astronaut">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <div class="stars-animation">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="hero-content text-center">
+                            <h1 class="display-2 fw-bold mb-4 animate-fade-in">Explore the Universe</h1>
+                            <p class="lead mb-4 animate-slide-up">Join us on an incredible journey to the stars with cutting-edge space technology</p>
+                            <a href="#about" class="btn btn-primary btn-lg pulse-button">Start Your Journey</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Rocket -->
+                <div class="carousel-item">
+                    <div class="carousel-background bg-rocket">
+                        <div class="rocket-animation">
+                            <i class="fas fa-rocket"></i>
+                            <div class="rocket-trail"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="hero-content text-center">
+                            <h1 class="display-2 fw-bold mb-4 animate-fade-in">Launch Your Dreams</h1>
+                            <p class="lead mb-4 animate-slide-up">Experience the thrill of space exploration with our revolutionary rocket technology</p>
+                            <a href="#services" class="btn btn-success btn-lg pulse-button">Explore Services</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Space -->
+                <div class="carousel-item">
+                    <div class="carousel-background bg-space">
+                        <div class="planet-animation">
+                            <div class="planet"></div>
+                            <div class="orbit"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="hero-content text-center">
+                            <h1 class="display-2 fw-bold mb-4 animate-fade-in">Infinite Possibilities</h1>
+                            <p class="lead mb-4 animate-slide-up">Discover new worlds and push the boundaries of human exploration</p>
+                            <a href="#contact" class="btn btn-warning btn-lg pulse-button">Get In Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#spaceCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#spaceCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="display-4 fw-bold mb-4">About SpaceX Startup</h2>
+                    <p class="lead mb-4">We're pioneering the future of space exploration through innovative technology and bold vision.</p>
+                    <div class="row">
+                        <div class="col-sm-6 mb-3">
+                            <div class="feature-box">
+                                <i class="fas fa-satellite-dish fa-2x text-primary mb-3"></i>
+                                <h5>Advanced Technology</h5>
+                                <p>Cutting-edge space communication systems</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <div class="feature-box">
+                                <i class="fas fa-globe fa-2x text-success mb-3"></i>
+                                <h5>Global Reach</h5>
+                                <p>Connecting the world through space</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-animation">
+                        <div class="rotating-satellite">
+                            <i class="fas fa-satellite"></i>
+                        </div>
+                        <div class="orbit-ring"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold">Our Services</h2>
+                <p class="lead">Comprehensive space solutions for the modern world</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-4">
+                                <i class="fas fa-rocket fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title mb-3">Rocket Launches</h5>
+                            <p class="card-text">Professional rocket launching services for satellites and cargo delivery to space.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-4">
+                                <i class="fas fa-user-astronaut fa-3x text-success"></i>
+                            </div>
+                            <h5 class="card-title mb-3">Astronaut Training</h5>
+                            <p class="card-text">Comprehensive training programs for future space explorers and astronauts.</p>
+                            <a href="#" class="btn btn-outline-success">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-4">
+                                <i class="fas fa-satellite-dish fa-3x text-warning"></i>
+                            </div>
+                            <h5 class="card-title mb-3">Space Communications</h5>
+                            <p class="card-text">Advanced satellite communication systems for global connectivity.</p>
+                            <a href="#" class="btn btn-outline-warning">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-4">
+                                <i class="fas fa-globe-americas fa-3x text-info"></i>
+                            </div>
+                            <h5 class="card-title mb-3">Earth Observation</h5>
+                            <p class="card-text">High-resolution Earth monitoring and data collection services.</p>
+                            <a href="#" class="btn btn-outline-info">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-4">
+                                <i class="fas fa-meteor fa-3x text-danger"></i>
+                            </div>
+                            <h5 class="card-title mb-3">Space Research</h5>
+                            <p class="card-text">Cutting-edge research in space science and exploration technologies.</p>
+                            <a href="#" class="btn btn-outline-danger">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-4">
+                                <i class="fas fa-space-shuttle fa-3x text-secondary"></i>
+                            </div>
+                            <h5 class="card-title mb-3">Space Tourism</h5>
+                            <p class="card-text">Experience the wonder of space travel with our luxury space tourism packages.</p>
+                            <a href="#" class="btn btn-outline-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold">Our Team</h2>
+                <p class="lead">Meet the brilliant minds behind our space missions</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card team-card border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="team-avatar mb-3">
+                                <i class="fas fa-user-astronaut fa-4x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Dr. Sarah Chen</h5>
+                            <p class="text-muted mb-3">Chief Astronaut</p>
+                            <p class="card-text small">Leading our human spaceflight programs with over 15 years of experience.</p>
+                            <div class="social-links">
+                                <a href="#" class="text-primary me-2"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-info me-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-dark"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card team-card border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="team-avatar mb-3">
+                                <i class="fas fa-user-tie fa-4x text-success"></i>
+                            </div>
+                            <h5 class="card-title">Mark Rodriguez</h5>
+                            <p class="text-muted mb-3">Mission Director</p>
+                            <p class="card-text small">Orchestrating complex space missions with precision and innovation.</p>
+                            <div class="social-links">
+                                <a href="#" class="text-primary me-2"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-info me-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-dark"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card team-card border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="team-avatar mb-3">
+                                <i class="fas fa-user-graduate fa-4x text-warning"></i>
+                            </div>
+                            <h5 class="card-title">Dr. Emma Wilson</h5>
+                            <p class="text-muted mb-3">Lead Engineer</p>
+                            <p class="card-text small">Designing next-generation spacecraft and propulsion systems.</p>
+                            <div class="social-links">
+                                <a href="#" class="text-primary me-2"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-info me-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-dark"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card team-card border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="team-avatar mb-3">
+                                <i class="fas fa-user-cog fa-4x text-info"></i>
+                            </div>
+                            <h5 class="card-title">Alex Thompson</h5>
+                            <p class="text-muted mb-3">Tech Lead</p>
+                            <p class="card-text small">Developing cutting-edge software for space navigation and control.</p>
+                            <div class="social-links">
+                                <a href="#" class="text-primary me-2"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-info me-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-dark"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <i class="fas fa-rocket fa-3x mb-3"></i>
+                        <h3 class="display-4 fw-bold counter" data-target="127">0</h3>
+                        <p class="lead">Successful Launches</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <i class="fas fa-satellite fa-3x mb-3"></i>
+                        <h3 class="display-4 fw-bold counter" data-target="89">0</h3>
+                        <p class="lead">Satellites Deployed</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <i class="fas fa-user-astronaut fa-3x mb-3"></i>
+                        <h3 class="display-4 fw-bold counter" data-target="45">0</h3>
+                        <p class="lead">Astronauts Trained</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <i class="fas fa-globe fa-3x mb-3"></i>
+                        <h3 class="display-4 fw-bold counter" data-target="23">0</h3>
+                        <p class="lead">Countries Served</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold">Contact Us</h2>
+                <p class="lead">Ready to start your space journey? Get in touch!</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-body p-5">
+                            <form class="contact-form">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                                            <label for="firstName">First Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                                            <label for="lastName">Last Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                            <label for="email">Email Address</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="service">
+                                                <option selected>Choose a service...</option>
+                                                <option value="rocket-launch">Rocket Launch</option>
+                                                <option value="astronaut-training">Astronaut Training</option>
+                                                <option value="space-communication">Space Communication</option>
+                                                <option value="space-tourism">Space Tourism</option>
+                                            </select>
+                                            <label for="service">Service Interest</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="message" placeholder="Message" style="height: 120px" required></textarea>
+                                            <label for="message">Your Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-lg w-100 pulse-button">
+                                            <i class="fas fa-paper-plane me-2"></i>Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="mb-4">
+                        <i class="fas fa-rocket me-2"></i>SpaceX Startup
+                    </h5>
+                    <p class="mb-4">Pioneering the future of space exploration through innovative technology and bold vision. Join us as we reach for the stars!</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="mb-4">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-light text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="text-light text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="#services" class="text-light text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="#team" class="text-light text-decoration-none">Team</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="mb-4">Services</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Rocket Launches</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Astronaut Training</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Space Communications</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Earth Observation</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Space Tourism</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="mb-4">Contact Info</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>123 Space Center Drive, Houston, TX</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i>+1 (555) 123-SPACE</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i>info@spacexstartup.com</li>
+                        <li class="mb-2"><i class="fas fa-globe me-2"></i>www.spacexstartup.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 SpaceX Startup. All rights reserved. | Week 4 - Animated Landing Page</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-light text-decoration-none me-3">Terms of Service</a>
+                    <a href="#" class="text-light text-decoration-none">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Counter animation
+        function animateCounter(element) {
+            const target = parseInt(element.getAttribute('data-target'));
+            const increment = target / 200;
+            let current = 0;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                element.textContent = Math.floor(current);
+                
+                if (current >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                }
+            }, 10);
+        }
+
+        // Intersection Observer for counter animation
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = entry.target.querySelectorAll('.counter');
+                    counters.forEach(counter => {
+                        animateCounter(counter);
+                    });
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        // Observe statistics section
+        const statsSection = document.querySelector('.bg-primary');
+        if (statsSection) {
+            counterObserver.observe(statsSection);
+        }
+
+        // Contact form submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+            
+            // Simple validation
+            if (firstName && lastName && email && message) {
+                // Simulate form submission
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
+                submitBtn.disabled = true;
+                
+                setTimeout(() => {
+                    alert('Thank you for your message! We\'ll get back to you soon.');
+                    this.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, 2000);
+            }
+        });
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Add animation classes to elements when they come into view
+        const animationObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        });
+
+        // Observe service cards and team cards
+        document.querySelectorAll('.service-card, .team-card').forEach(card => {
+            animationObserver.observe(card);
+        });
+    </script>
+</body>
+</html>
